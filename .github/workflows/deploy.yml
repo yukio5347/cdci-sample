@@ -12,6 +12,6 @@ jobs:
         host: ${{ secrets.SERVER_HOST }}
         username: ${{ secrets.SERVER_USERNAME }}
         port: ${{ secrets.SERVER_PORT }}
-        script:
+        script: |
           cd ${{ secrets.SERVER_DIRECTORY }}
           git pull origin main
